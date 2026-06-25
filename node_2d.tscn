@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://npj6ivpkruu5"]
+
+[ext_resource type="Texture2D" uid="uid://cqrh6bhx3shty" path="res://Sprites/Pinkiepie.png" id="1_1kg85"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_27d8y"]
+size = Vector2(28, 24)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(-9, -10)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(23, 22)
+scale = Vector2(0.0952004, 0.0925633)
+texture = ExtResource("1_1kg85")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(23, 22)
+shape = SubResource("RectangleShape2D_27d8y")
+debug_color = Color(0.974036, 0.382078, 0.636984, 0.42)
